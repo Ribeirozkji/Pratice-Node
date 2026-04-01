@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Usuários</h1>
+
+  <a href="/">Início</a>
+  <a href="/logs">Logs</a>
+
+  <form action="/users/add" method="POST">
+    <input type="text" name="nome" placeholder="Nome do usuário">
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Lista de usuários</h2>
+
+  {{#each users}}
+    <p>{{this.id_user}} - {{this.nome}}</p>
+  {{/each}}
+</div>

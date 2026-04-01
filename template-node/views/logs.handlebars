@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Logs</h1>
+
+  <a href="/">Início</a>
+  <a href="/users">Usuários</a>
+
+  <form action="/logs/add" method="POST">
+    <select name="id_user">
+      <option value="">Selecione um usuário</option>
+      {{#each users}}
+        <option value="{{this.id_user}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+
+    <button type="submit">Registrar log</button>
+  </form>
+
+  <h2>Lista de logs</h2>
+
+  {{#each logs}}
+    <p>{{this.id_logs}} - {{this.nome}} - {{this.dia_logs}}</p>
+  {{/each}}
+</div>
