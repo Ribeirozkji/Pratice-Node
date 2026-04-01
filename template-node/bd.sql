@@ -16,4 +16,6 @@ CREATE TABLE registro_logs (
     FOREIGN KEY (id_user) REFERENCES users(id_user)
 );
 
+SELECT * FROM users;
+SELECT & FROM registro_logs;
 	
