@@ -6,7 +6,7 @@ USE ATV;
 CREATE TABLE users (
     id_user INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL
+    
 );
 
 CREATE TABLE registro_logs (
